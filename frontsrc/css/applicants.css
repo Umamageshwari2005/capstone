@@ -1,0 +1,101 @@
+.applicants-page{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.applicants-page h1{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+}
+
+.applicants-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.applicants-table thead{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.applicants-table th{
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.applicants-table td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.applicants-table tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.resume-btn{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 14px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+.resume-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.applicants-table select{
+
+    padding:8px;
+
+    border-radius:6px;
+
+    border:1px solid #d1d5db;
+
+}
+
+.empty-box{
+
+    padding:60px;
+
+    text-align:center;
+
+    color:#666;
+
+}

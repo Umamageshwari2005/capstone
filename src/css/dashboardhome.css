@@ -1,0 +1,438 @@
+/* =====================================================
+   DASHBOARD HOME
+===================================================== */
+
+.dashboard-home{
+    width:100%;
+    min-height:100vh;
+    padding:30px;
+    background:linear-gradient(180deg,#085bc7,#0a54bc,#bf0606);
+    animation:fadeIn .5s ease-in-out;
+    
+}
+
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =====================================================
+   Welcome Banner
+===================================================== */
+
+.welcome-banner{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed);
+
+    color:white;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    margin-bottom:30px;
+
+    box-shadow:0 18px 45px rgba(79,70,229,.25);
+
+}
+
+.welcome-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:320px;
+
+    height:320px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+
+    right:-100px;
+
+}
+
+.welcome-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.06);
+
+    bottom:-60px;
+
+    left:-60px;
+
+}
+
+.welcome-banner h1{
+
+    font-size:38px;
+
+    font-weight:700;
+
+    margin-bottom:10px;
+
+}
+
+.welcome-banner p{
+
+    font-size:18px;
+
+    opacity:.95;
+
+    margin-bottom:0;
+
+}
+
+/* =====================================================
+   Dashboard Sections
+===================================================== */
+
+.dashboard-home>div{
+
+    margin-top:25px;
+
+}
+
+/* =====================================================
+   Cards
+===================================================== */
+
+.latest-jobs-card,
+.recommended-jobs-card,
+.recent-applications{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.latest-jobs-card:hover,
+.recommended-jobs-card:hover,
+.recent-applications:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.18);
+
+}
+
+/* =====================================================
+   Job Cards
+===================================================== */
+
+.card{
+
+    border:none !important;
+
+    border-radius:18px !important;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.12) !important;
+
+}
+
+.card-title{
+
+    font-weight:700;
+
+}
+
+.card-subtitle{
+
+    color:#64748b !important;
+
+}
+
+.badge{
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+}
+
+/* =====================================================
+   Recent Applications
+===================================================== */
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+.dashboard-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.dashboard-table thead{
+
+    background:linear-gradient(90deg,#2563eb,#4f46e5);
+
+    color:white;
+
+}
+
+.dashboard-table th{
+
+    padding:16px;
+
+    text-align:center;
+
+    font-size:15px;
+
+}
+
+.dashboard-table td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #edf2f7;
+
+    font-size:14px;
+
+}
+
+.dashboard-table tbody tr{
+
+    transition:.3s;
+
+}
+
+.dashboard-table tbody tr:hover{
+
+    background:#f8fbff;
+
+}
+
+/* =====================================================
+   Status Badge
+===================================================== */
+
+.status-badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    color:white;
+
+    font-weight:600;
+
+    font-size:13px;
+
+}
+
+.status-badge.applied{
+
+    background:#2563eb;
+
+}
+
+.status-badge.shortlisted{
+
+    background:#10b981;
+
+}
+
+.status-badge.interview-scheduled{
+
+    background:#f59e0b;
+
+}
+
+.status-badge.placed{
+
+    background:#16a34a;
+
+}
+
+.status-badge.rejected{
+
+    background:#ef4444;
+
+}
+
+/* =====================================================
+   Footer
+===================================================== */
+
+.dashboard-footer{
+
+    margin-top:40px;
+
+    background:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    font-size:15px;
+
+    color:#64748b;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/* =====================================================
+   Scrollbar
+===================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4f46e5;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1f5f9;
+
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media(max-width:1200px){
+
+.dashboard-home{
+
+padding:20px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.dashboard-home>div{
+
+display:block;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dashboard-home{
+
+padding:15px;
+
+}
+
+.welcome-banner{
+
+padding:25px;
+
+}
+
+.welcome-banner h1{
+
+font-size:28px;
+
+}
+
+.welcome-banner p{
+
+font-size:15px;
+
+}
+
+.dashboard-footer{
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.dashboard-home{
+
+padding:10px;
+
+}
+
+.welcome-banner{
+
+border-radius:18px;
+
+padding:20px;
+
+}
+
+.dashboard-table th,
+.dashboard-table td{
+
+padding:10px;
+
+font-size:12px;
+
+}
+
+}

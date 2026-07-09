@@ -1,0 +1,384 @@
+/* ==========================================
+            JOBS PAGE
+========================================== */
+
+.jobs-page{
+
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#edf4ff,#f5f3ff,#f0fdf4);
+
+    padding:30px;
+
+}
+
+/* ==========================================
+            PAGE TITLE
+========================================== */
+
+.jobs-page h1{
+
+    text-align:center;
+
+    font-size:38px;
+
+    font-weight:700;
+
+    color:#1e3a8a;
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+            SEARCH SECTION
+========================================== */
+
+.search-job{
+
+    background:linear-gradient(135deg,#dbeafe,#ede9fe);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    margin-bottom:30px;
+
+    box-shadow:0 12px 30px rgba(37,99,235,.12);
+
+}
+
+/* ==========================================
+            JOB LIST
+========================================== */
+
+.jobs-list{
+
+    background:linear-gradient(135deg,#f8fbff,#eef6ff);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+            JOB CARD
+========================================== */
+
+.jobs-list .card{
+
+    background:linear-gradient(135deg,#ffffff,#f8fbff);
+
+    border:none;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+
+}
+
+.jobs-list .card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(37,99,235,.18);
+
+}
+
+/* ==========================================
+            EMPTY DATA
+========================================== */
+
+.jobs-list h2{
+
+    background:linear-gradient(135deg,#dbeafe,#ede9fe);
+
+    padding:35px;
+
+    border-radius:18px;
+
+    color:#334155!important;
+
+}
+
+/* ==========================================
+            BOOTSTRAP ROW
+========================================== */
+
+.jobs-list .row{
+
+    row-gap:20px;
+
+}
+
+/* ==========================================
+            RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.jobs-page{
+
+padding:20px;
+
+}
+
+.jobs-list{
+
+padding:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.jobs-page h1{
+
+font-size:30px;
+
+}
+
+.jobs-list{
+
+padding:15px;
+
+}
+
+.search-job{
+
+padding:18px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.jobs-page{
+
+padding:10px;
+
+}
+
+.jobs-list{
+
+border-radius:18px;
+
+}
+
+}
+/* ===========================================
+   Jobs Page Background
+=========================================== */
+
+.jobs-page{
+    background:linear-gradient(135deg,#dbeafe,#ede9fe,#e0f2fe);
+    min-height:100vh;
+}
+
+/* ===========================================
+   Search Section
+=========================================== */
+
+.search-job{
+    background:linear-gradient(135deg,#4f46e5,#2563eb);
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(37,99,235,.25);
+}
+
+/* ===========================================
+   Jobs Container
+=========================================== */
+
+.jobs-list{
+    background:linear-gradient(135deg,#bfdbfe,#dbeafe);
+    padding:20px;
+    border-radius:20px;
+}
+
+/* ===========================================
+   Page Heading
+=========================================== */
+
+.jobs-page h1{
+    color:#1e3a8a;
+    font-weight:700;
+}
+
+/* ===========================================
+   Search Inputs
+=========================================== */
+
+.search-job input,
+.search-job select{
+
+    background:#f8fafc;
+
+    border:2px solid #c7d2fe;
+
+}
+
+.search-job input:focus,
+.search-job select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.25);
+
+}
+
+/* ===========================================
+   Search Buttons
+=========================================== */
+
+.search-job button{
+
+    background:#1d4ed8;
+
+    color:white;
+
+    border:none;
+
+}
+
+.search-job button:hover{
+
+    background:#1e40af;
+
+}
+
+/* ===========================================
+   Empty Result
+=========================================== */
+
+.jobs-list h2{
+
+    background:#dbeafe;
+
+    border-radius:15px;
+
+    padding:25px;
+
+}
+/* Keep two cards per row with proper spacing */
+
+.jobs-list .row{
+    row-gap: 30px;
+    column-gap: 0px;
+}
+
+/* Job Card */
+
+.jobs-list .card{
+
+    border-radius:20px;
+
+    padding:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.10);
+
+    transition:0.3s ease;
+
+}
+
+/* Different border color for each card */
+
+.jobs-list .col:nth-child(4n+1) .card{
+    border-left:8px solid #2563eb;   /* Blue */
+}
+
+.jobs-list .col:nth-child(4n+2) .card{
+    border-left:8px solid #10b981;   /* Green */
+}
+
+.jobs-list .col:nth-child(4n+3) .card{
+    border-left:8px solid #f59e0b;   /* Orange */
+}
+
+.jobs-list .col:nth-child(4n+4) .card{
+    border-left:8px solid #8b5cf6;   /* Purple */
+}
+
+/* Hover */
+
+.jobs-list .card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,0.18);
+
+}
+
+/* Space inside */
+
+.jobs-list .card-body{
+    padding:15px;
+}
+/* Keep two cards per row */
+
+.jobs-list .row{
+    row-gap:30px;
+}
+
+/* Common Card */
+
+.jobs-list .card{
+
+    border-radius:20px;
+
+    border:4px solid transparent;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+/* Card 1 */
+
+.jobs-list .col:nth-child(4n+1) .card{
+
+    border:4px solid #2563eb;
+
+}
+
+/* Card 2 */
+
+.jobs-list .col:nth-child(4n+2) .card{
+
+    border:4px solid #10b981;
+
+}
+
+/* Card 3 */
+
+.jobs-list .col:nth-child(4n+3) .card{
+
+    border:4px solid #f59e0b;
+
+}
+
+/* Card 4 */
+
+.jobs-list .col:nth-child(4n+4) .card{
+
+    border:4px solid #8b5cf6;
+
+}
+
+/* Hover */
+
+.jobs-list .card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.18);
+
+}

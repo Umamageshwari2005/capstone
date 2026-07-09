@@ -1,0 +1,41 @@
+.recent-applications{
+
+    background:rgb(246, 4, 4);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    min-height:420px;
+
+}
+
+.dashboard-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.dashboard-table th{
+
+    background:#2563eb;
+
+    color:#f07979;
+
+    padding:12px;
+
+}
+
+.dashboard-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ee4949;
+
+    text-align:center;
+
+}

@@ -1,0 +1,175 @@
+.applications-page{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.applications-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.applications-header h1{
+
+    color:#2563eb;
+
+    font-size:30px;
+
+}
+
+.applications-header input{
+
+    width:300px;
+
+    padding:12px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.applications-header input:focus{
+
+    border:1px solid #2563eb;
+
+}
+
+.applications-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+}
+
+.applications-table thead{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.applications-table th{
+
+    padding:15px;
+
+    text-align:center;
+
+}
+
+.applications-table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    text-align:center;
+
+}
+
+.applications-table tr:hover{
+
+    background:#f8fafc;
+
+}
+
+.status{
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    color:white;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.applied{
+
+    background:#2563eb;
+
+}
+
+.shortlisted{
+
+    background:#16a34a;
+
+}
+
+.rejected{
+
+    background:#dc2626;
+
+}
+
+.withdraw-btn{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.withdraw-btn:hover{
+
+    background:#dc2626;
+
+}
+
+.empty-box{
+
+    background:#f8fafc;
+
+    padding:60px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    color:#6b7280;
+
+}
+
+.loading{
+
+    text-align:center;
+
+    padding:60px;
+
+}

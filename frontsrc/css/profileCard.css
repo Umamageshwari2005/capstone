@@ -1,0 +1,123 @@
+.profile-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    text-align:center;
+
+}
+
+.profile-card img{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    border:5px solid #2563eb;
+
+}
+
+.profile-card h2{
+
+    margin-top:20px;
+
+    color:#1e3a8a;
+
+}
+
+.profile-card p{
+
+    color:#666;
+
+}
+
+.progress-box{
+
+    margin-top:25px;
+
+}
+
+.progress{
+
+    height:10px;
+
+    background:#ddd;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    margin:10px 0;
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    background:linear-gradient(to right,#2563eb,#06b6d4);
+
+}
+
+.profile-details{
+
+    margin-top:25px;
+
+    display:grid;
+
+    gap:15px;
+
+}
+
+.profile-details div{
+
+    display:flex;
+
+    gap:15px;
+
+    align-items:center;
+
+    background:#f4f7fb;
+
+    padding:12px;
+
+    border-radius:10px;
+
+}
+
+.dashboard-small-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+.dashboard-small-cards div{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+}
+
+.dashboard-small-cards h3{
+
+    font-size:24px;
+
+}

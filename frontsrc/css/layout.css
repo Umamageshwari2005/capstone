@@ -1,0 +1,39 @@
+:root {
+    --header-height: 70px;
+    --sidebar-width: 240px;
+}
+
+.layout-container {
+    display: flex;
+}
+
+/* Header is fixed */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    z-index: 1000;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--header-height));
+    overflow-y: auto;
+}
+
+/* Dashboard Content */
+.main-content {
+    margin-top: var(--header-height);
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-height: calc(100vh - var(--header-height));
+    padding: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}

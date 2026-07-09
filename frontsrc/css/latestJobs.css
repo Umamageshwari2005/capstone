@@ -1,0 +1,23 @@
+/* ===========================
+   Latest Job Openings Background
+=========================== */
+
+.latest-jobs-card{
+
+    background:linear-gradient(135deg,#0967e3,#015acd);
+
+    border-radius:20px;
+
+}
+
+/* ===========================
+   Recommended Jobs Background
+=========================== */
+
+.recommended-jobs-card{
+
+    background:linear-gradient(135deg,#22e366,#23df5b);
+
+    border-radius:20px;
+
+}

@@ -1,0 +1,576 @@
+/*====================================================
+        CAREERCRAFTER USER DASHBOARD
+====================================================*/
+
+.dashboard-container{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+    padding:10px;
+
+}
+
+/*==========================
+        WELCOME BANNER
+==========================*/
+
+.welcome-banner{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5,#7c3aed);
+
+    border-radius:28px;
+
+    padding:45px;
+
+    color:white;
+
+    position:relative;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(79,70,229,.25);
+
+}
+
+.welcome-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+
+    right:-80px;
+
+}
+
+.welcome-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.10);
+
+    bottom:-70px;
+
+    left:-50px;
+
+}
+
+.welcome-banner h1{
+
+    font-size:40px;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+.welcome-banner p{
+
+    font-size:18px;
+
+    opacity:.95;
+
+    position:relative;
+
+    z-index:10;
+
+}
+
+/*==========================
+        STATISTICS GRID
+==========================*/
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+/*==========================
+        COMMON CARD
+==========================*/
+
+.stat-card{
+
+    border-radius:25px;
+
+    padding:28px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    color:#1e293b;
+
+    box-shadow:0 18px 35px rgba(0,0,0,.08);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px) scale(1.03);
+
+}
+
+.stat-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.35);
+
+    right:-40px;
+
+    top:-40px;
+
+}
+
+/*==========================
+      TOTAL JOBS
+==========================*/
+
+.jobs{
+
+    background:linear-gradient(135deg,#bfdbfe,#93c5fd,#60a5fa);
+
+}
+
+/*==========================
+      APPLICATIONS
+==========================*/
+
+.apps{
+
+    background:linear-gradient(135deg,#bbf7d0,#86efac,#4ade80);
+
+}
+
+/*==========================
+      RESUME
+==========================*/
+
+.resume{
+
+    background:linear-gradient(135deg,#fde68a,#fcd34d,#fbbf24);
+
+}
+
+/*==========================
+      NOTIFICATION
+==========================*/
+
+.notify{
+
+    background:linear-gradient(135deg,#fbcfe8,#f9a8d4,#f472b6);
+
+}
+
+/*==========================
+         ICON
+==========================*/
+
+.stat-icon{
+
+    font-size:46px;
+
+    margin-bottom:20px;
+
+    color:white;
+
+    transition:.4s;
+
+}
+
+.stat-card:hover .stat-icon{
+
+    transform:rotate(10deg) scale(1.15);
+
+}
+
+/*==========================
+        TEXT
+==========================*/
+
+.stat-card h4{
+
+    color:#ffffff;
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.stat-card h2{
+
+    color:white;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+}
+/*==========================================
+        DASHBOARD GRID
+==========================================*/
+
+.dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+.dashboard-layout{
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr;
+
+    gap:30px;
+
+    margin-top:30px;
+
+}
+
+.left-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.right-panel{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/*==========================================
+        COMMON DASHBOARD CARD
+==========================================*/
+
+.dashboard-card{
+
+    background:linear-gradient(135deg,#eef4ff,#dbeafe);
+
+    border-radius:25px;
+
+    padding:25px;
+
+    box-shadow:0 15px 35px rgba(59,130,246,.15);
+
+    transition:.35s;
+
+}
+
+.dashboard-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(59,130,246,.25);
+
+}
+
+/*==========================================
+        CARD HEADER
+==========================================*/
+
+.card-header{
+
+    background:transparent;
+
+    border:none;
+
+    margin-bottom:20px;
+
+}
+
+.card-header h2{
+
+    color:#1e40af;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/*==========================================
+        TABLE
+==========================================*/
+
+.table-container{
+
+    overflow-x:auto;
+
+}
+
+.dashboard-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+}
+
+.dashboard-table thead{
+
+    background:linear-gradient(90deg,#2563eb,#4f46e5);
+
+}
+
+.dashboard-table th{
+
+    color:white;
+
+    padding:16px;
+
+    font-size:15px;
+
+}
+
+.dashboard-table td{
+
+    padding:15px;
+
+    font-size:14px;
+
+    color:#334155;
+
+}
+
+.dashboard-table tbody tr:nth-child(odd){
+
+    background:#eef4ff;
+
+}
+
+.dashboard-table tbody tr:nth-child(even){
+
+    background:#dbeafe;
+
+}
+
+.dashboard-table tbody tr:hover{
+
+    background:#bfdbfe;
+
+    transition:.3s;
+
+}
+
+/*==========================================
+        EMPTY DATA
+==========================================*/
+
+.empty{
+
+    background:linear-gradient(135deg,#fff7ed,#fde68a);
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    color:#92400e;
+
+    font-weight:600;
+
+}
+
+/*==========================================
+        FOOTER
+==========================================*/
+
+.dashboard-footer{
+
+    margin-top:35px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    font-size:15px;
+
+    font-weight:500;
+
+    box-shadow:0 10px 30px rgba(79,70,229,.25);
+
+}
+
+/*==========================================
+        RESPONSIVE
+==========================================*/
+
+@media(max-width:1200px){
+
+.stats-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.dashboard-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.dashboard-layout{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.welcome-banner{
+
+padding:30px;
+
+}
+
+.welcome-banner h1{
+
+font-size:28px;
+
+}
+
+.welcome-banner p{
+
+font-size:15px;
+
+}
+
+.dashboard-card{
+
+padding:20px;
+
+}
+
+.card-header h2{
+
+font-size:22px;
+
+}
+
+.dashboard-table th,
+
+.dashboard-table td{
+
+padding:12px;
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.dashboard-container{
+
+padding:5px;
+
+}
+
+.welcome-banner{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.dashboard-card{
+
+padding:15px;
+
+border-radius:18px;
+
+}
+
+.dashboard-footer{
+
+font-size:13px;
+
+}
+
+}
